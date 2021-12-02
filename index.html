@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li class="list active">
+          <a href="#">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="planet-outline"></ion-icon
+            ></span>
+            <span class="text">Home2</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="airplane-outline"></ion-icon
+            ></span>
+            <span class="text">Home3</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="aperture-outline"></ion-icon
+            ></span>
+            <span class="text">Home4</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="aperture-outline"></ion-icon
+            ></span>
+            <span class="text">Home4</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+    <script>
+      const lists = document.querySelectorAll('.list');
+      function activeList() {
+        lists.forEach((item) => {
+          item.classList.remove('active');
+          this.classList.add('active');
+        });
+      }
+      lists.forEach((item) => {
+        item.addEventListener('click', activeList);
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
